@@ -1,0 +1,164 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+.site-title {
+  text-decoration: none;
+  color: white;
+}
+
+.site-title:hover {
+  color: #e0e0e0; /* tùy chọn: màu khi hover */
+}
+/* ===== HEADER ===== */
+.custom-header {
+  background-color: #669EFF;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.custom-header h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/* Navigation */
+    nav ul li {
+        display: inline;
+        margin: 5px;
+    }
+
+    nav ul {
+        overflow-x: hidden; /* Ngăn cuộn ngang */
+        white-space: nowrap;
+        padding: 3px;
+        justify-content: center; /* Giữ navigation ở giữa */
+        text-align: center; /* Căn giữa nội dung */
+    }
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f5faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#contact h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #669EFF;
+  outline: none;
+}
+
+#contact button {
+  padding: 12px;
+  background-color: #669EFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #4c85d8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #5b9aff;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #e2c87a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ffffff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #contact {
+    padding: 20px;
+  }
+}
